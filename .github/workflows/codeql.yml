@@ -73,6 +73,8 @@ jobs:
       with:
         languages: ${{ matrix.language }}
         build-mode: ${{ matrix.build-mode }}
+        #nightly build of CodeQL.  Remove this once CodeQL v2.21.4 is GA (~May 30)
+        tools: https://github.com/dsp-testing/codeql-cli-nightlies/releases/download/codeql-bundle-20250527/codeql-bundle-win64.tar.gz
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
         # Prefix the list here with "+" to use these queries and those in the config file.
